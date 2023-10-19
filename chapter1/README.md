@@ -17,6 +17,8 @@
 ------------------------------
 # Задание
 
+![practice-1.png](..%2Fimg%2Fpractice-1.png)
+
 1. Run Managed Service for GreenPlum
 
 ![cloud-gp-cluster-alive.png](..%2Fimg%2Fcloud-gp-cluster-alive.png)
