@@ -8,7 +8,7 @@
 
 Часть 2:
 - 💣 [Практическое задание 5 (indexes)](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md#%EF%B8%8F-практическое-задание-5-индексы)
-- 💣 [Практическое задание 2 (compression)](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md#%EF%B8%8F-практическое-задание-2-алгоритмы-сжатия)
+- 💣 [Практическое задание 6 (constrain)](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md#%EF%B8%8F--практическое-задание-6-ограничения-целостности)
 - 💣 [Практическое задание 3 (partition)](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md#%EF%B8%8F-практическое-задание-3-партицирование)
 - 💣 [Практическое задание 4 (partition manipuilation)](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md#%EF%B8%8F-практическое-задание-4-манипуляции-с-партициями)
 
@@ -844,3 +844,10 @@ contype = 'p' - ограничения первичного ключа
 6. Детализированное описание ограничения `\d+ urev_t3_constrain_pkey`
 
 ![detailed_pkey_constrain.png](..%2Fimg%2Fdetailed_pkey_constrain.png)
+
+[👉 К оглавлению](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md#физическая-модель-данных-и-ddl)
+
+--------------------------
+
+## Последовательности
+
