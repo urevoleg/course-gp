@@ -789,3 +789,58 @@ CREATE TABLE t (
 5. **FOREIGN KEY** не поддерживаются: создание FOREIGN KEY возможно, но СУБД не будет проверять его при вставке значений в таблицу.
 
 Все ограничения целостности можно найти в системной таблице **pg_constraint**.
+
+-------------------------
+### ✍️  Практическое задание 6: ограничения целостности
+
+1. Создайте таблицу с полем id PRIMARY KEY и набором полей с ограничением целостности NOT NULL.
+
+```sql
+CREATE TABLE urev_t3_constrain (
+    id int PRIMARY KEY,
+  f1 int NOT NULL,
+  f2 varchar NOT NULL
+);
+
+INSERT INTO urev_t3_constrain (id, f1, f2) VALUES (1, 15, 'ch'); 
+INSERT INTO urev_t3_constrain (id, f1, f2) VALUES (2, -150, 'pg'); 
+INSERT INTO urev_t3_constrain (id, f1, f2) VALUES (3, 373, 'gp'); 
+```
+
+2. Вставьте несколько строк в таблицу. Попробуйте вставить NULL в поле id и другие поля с ограничением целостности NOT NULL.
+
+```sql
+INSERT INTO urev_t3_constrain (id) VALUES (NULL); 
+```
+
+Получаем ошибку:
+```
+ERROR:  null value in column "id" violates not-null constraint  (seg0 10.129.0.32:6000 pid=598245)
+DETAIL:  Failing row contains (null, null, null).
+```
+
+3. Попробуйте вставить повторяющиеся значения в поле id.
+
+```sql
+INSERT INTO urev_t3_constrain (id, f1, f2) VALUES (1, -90, 'sqlite3'); 
+```
+
+Получаем ошибку:
+```
+ERROR:  duplicate key value violates unique constraint "urev_t3_constrain_pkey"  (seg4 10.129.0.15:6001 pid=616174)
+DETAIL:  Key (id)=(1) already exists.
+```
+
+4. Детализированное описание таблицы `\d+ urev_t3_constrain`
+
+![detailed_urev_t3_constrain.png](..%2Fimg%2Fdetailed_urev_t3_constrain.png)
+
+5. Найдите ограничения целостности для созданной вами таблицы в таблице pg_constraint.
+
+![conname.png](..%2Fimg%2Fconname.png)
+
+contype = 'p' - ограничения первичного ключа
+
+6. Детализированное описание ограничения `\d+ urev_t3_constrain_pkey`
+
+![detailed_pkey_constrain.png](..%2Fimg%2Fdetailed_pkey_constrain.png)
