@@ -624,3 +624,22 @@ EXPLAIN ANALYZE
 
 
 ## Оптимизация производительности запросов
+
+Когда что использовать:
+
+![partition_or_index.png](..%2Fimg%2Fpartition_or_index.png)
+
+
+----------------------------------
+
+# Итог
+
+![funny_cert.png](..%2Fimg%2Ffunny_cert.png)
+
+Полезные ссылки:
+1️⃣ [Канал Greenplum Database на YouTube](https://www.youtube.com/@greenplum) 
+2️⃣ [Документация по Yandex Managed Service for Greenplum](https://cloud.yandex.ru/docs/managed-greenplum/)
+3️⃣ [Документация по Greenplum от VMware](https://docs.vmware.com/en/VMware-Greenplum/index.html)
+4️⃣ [Документация PostgreSQL](https://www.postgresql.org/docs/9.4/index.html)
+5️⃣ [Русскоязычный телеграм-чат по Greenplum @greenplum_russia](https://t.me/greenplum_russia)
+6️⃣ [Блог Greenplum](https://greenplum.org/blogs/)
