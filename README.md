@@ -6,4 +6,4 @@ Course into MagnitTech
 
 2️⃣ [Chapter 2: Phisical data model and DDL](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md)
 
-2️⃣ [Chapter 3: Optimization](https://github.com/urevoleg/course-gp/blob/main/chapter2/README.md)
+2️⃣ [Chapter 3: Optimization](https://github.com/urevoleg/course-gp/blob/main/chapter3/README.md#оптимизация-производительности-запросов)
